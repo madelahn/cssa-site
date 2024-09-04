@@ -2,9 +2,9 @@
 
 :root {
     --background1: #1b1b1d;
-    --background2: white;
+    --background2: rgb(220, 220, 220);
     --main: #1b1b1d;
-    --accent: #AED0E8;
+    --accent: #8fbad8;
 }
 
 * {
@@ -29,12 +29,15 @@ a {
     background: none; border: none;
     font-size: 3rem;
     font-weight: 900;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.75);
 }
-
+#top-button i {
+    overflow: hidden;
+}
 #top-button p {
     margin-top: -1rem;
     font-size: 1rem;
+    padding: 0 1rem;
     text-transform: uppercase;
     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75); */
 }
@@ -77,6 +80,10 @@ a {
     height: 15vh;
     padding: 0 3rem;
     font-size: 1.5rem;
+}
+
+.navbar i {
+    overflow: hidden;
 }
 
 #top a {
@@ -280,6 +287,7 @@ a {
     justify-content: center;
     align-items: center;
     font-size: 3rem;
+    overflow: hidden;
 }
 
 .initiative-description {
@@ -354,6 +362,7 @@ a {
 .index-container li {
     list-style: none;
     font-size: 2rem;
+    cursor: pointer;
 }
 
 
@@ -406,5 +415,16 @@ a {
     }
     .initiative-title i {
         overflow: hidden;
+    }
+
+    .index-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+        padding: 0;
+        text-align: center;
+    }
+    .section-title {
+        text-align: center;
     }
 }
