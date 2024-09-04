@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible"      content="ie=edge">
+    <meta name="viewport"                   content="width=device-width, initial-scale=1.0">
+    <meta name="description"                content="">
+    <meta name="keywords"                   content="">
+
+    <meta property="og:url"                 content="" />
+    <meta property="og:title"               content="" />
+    <meta property="og:description"         content="" />
+    <meta property="og:site_name"           content="" />
+    <meta property="og:image"               content="" />
+    
+    <link rel="stylesheet" href="style.css"></style>
+    <script src="https://kit.fontawesome.com/46500dfde8.js" crossorigin="anonymous"></script>
+
+    <title>CSSA</title>
+</head>
+<body>
+    <button onclick="scrollToTop()" id="top-button">
+        <i class="fa-solid fa-chevron-up"></i>
+        <p>Back to Top</p>
+    </button>
+
+    <div class="navbar" id="top">
+            <a href="../index.html"><i class="fa-solid fa-fingerprint"></i></a>
+        <div class="subpages">
+            <a class="link" href="../index.html">Home</a>
+            <a class="link" href="../about.html">About</a>
+            <a class="link" href="../resources.html">Resources</a>
+            <a class="link" href="../contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="splash-container">
+        <div class="logo-image"><img src="../assets/logo.png" /></div>
+        <div class="title">UOFT CSSA</div>
+        <div class="subtitle">The Cybersecurity Student Association</div>
+    </div>
+
+    <div class="subdivider">
+        <div class="featured">
+            <div class="event-title">Kick-off Workshop Event - Penetration Testing 101!</div>
+            <div class="event">September 13, 2024 - UC 152 @ 3-5 PM EST</div>
+            <div class="event">RSVP <a href="https://docs.google.com/forms/d/e/1FAIpQLSfD5U722liujc14Yi1KwLRUYkpQKO92q_8QA44xiRo6hCX2Jw/viewform" target="_blank" rel="noreferrer noopener">here!</a></div>
+        </div>
+    </div>
+
+    <div class="body-section">
+        <div class="section-title">About Us</div>
+        <div class="section-par">
+            The University of Toronto Cybersecurity Student Association is a student-run organisation dedicated to promoting knowledge in the field of cybersecurity! 
+            Our mission is to unite students with similar passions and drive meaningful growth in their career through our workshops, events, and industry partners.
+        </div>
+        <ul>
+            <li class="initiative">
+                <div class="initiative-title">
+                    Education<i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="initiative-description">To teach cybersecurity concepts and technical skills to students of any discipline and experience level.</div>
+            </li>
+            <li class="initiative">
+                <div class="initiative-title">
+                    Community<i class="fa-solid fa-users"></i>
+                </div>
+                <div class="initiative-description">To collaborate, engage, and support other passionate students in cybersecurity.</div></li>
+            <li class="initiative">
+                <div class="initiative-title">
+                    Awareness<i class="fa-solid fa-bullhorn"></i>
+                </div>
+                <div class="initiative-description">To play a role in raising cybersecurity awareness within the University as well as the external community.</div>            </li>
+        </ul>
+        <div class="section-par">
+            Interested in becoming a general member? Fill in <a class="link" href="https://docs.google.com/forms/d/e/1FAIpQLSfD5U722liujc14Yi1KwLRUYkpQKO92q_8QA44xiRo6hCX2Jw/viewform">this form!</a>
+        </div>
+    </div>
+
+    <div class="body-section" id="events">
+        <div class="section-title">Upcoming Events</div>
+        <div class="section-par">UTCSSA has many exciting events planned for the 2024-2025 academic session. Here are some things to look forward to!</div>
+        <ul>
+            <li>Interative Workshops</li>
+            <li>Networking Panels</li>
+            <li>Educational Content</li>
+            <li>Industry Coffee Chats</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <div class="footer-title">UofT Cybersecurity Student Association</div>
+        <ul class="social-links">
+            <li>
+                <a href="https://www.instagram.com/uoftcssa/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            </li>
+            <li>
+                <a href="https://discord.gg/fqS3N7JPqr" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-discord"></i>  Discord</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/company/uoftcssa/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-linkedin"></i>  LinkedIn</a>
+            </li>
+            <li>
+                <a href="mailto:info@cyber.skule.ca" target="_blank" rel="noreferrer noopener"><i class="fa-regular fa-envelope"></i> Email</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <script>
+        let topButton = document.getElementById("top-button");
+        window.onscroll = function() { scroll() };
+
+        function scroll() {
+            if (document.body.scrollTop > 10 ||document.documentElement.scrollTop > 20) {
+                topButton.className = 'show';
+                topButton.style.display = "block";
+            } else {
+                topButton.className = 'hide';
+                wait();
+                topButton.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            document.getElementById('top').scrollIntoView({behavior: 'smooth'});
+        }
+    </script>
+
+</body>

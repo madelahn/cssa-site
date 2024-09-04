@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible"      content="ie=edge">
+    <meta name="viewport"                   content="width=device-width, initial-scale=1.0">
+    <meta name="description"                content="">
+    <meta name="keywords"                   content="">
+
+    <meta property="og:url"                 content="" />
+    <meta property="og:title"               content="" />
+    <meta property="og:description"         content="" />
+    <meta property="og:site_name"           content="" />
+    <meta property="og:image"               content="" />
+    
+    <link rel="stylesheet" href="style.css"></style>
+    <script src="https://kit.fontawesome.com/46500dfde8.js" crossorigin="anonymous"></script>
+
+    <title>CSSA</title>
+</head>
+<body>
+    <button onclick="scrollToTop()" id="top-button">
+        <i class="fa-solid fa-chevron-up"></i>
+        <p>Back to Top</p>
+    </button>
+    
+    <div class="navbar" id="top">
+        <a href="../index.html"><i class="fa-solid fa-fingerprint"></i></a>
+    <div class="subpages">
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../resources.html">Resources</a>
+        <a href="../contact.html">Contact</a>
+    </div>
+</div>
+
+    <div class="body-section"></div>
+
+    <div class="footer">
+        <div class="footer-title">UofT Cybersecurity Student Association</div>
+        <ul class="social-links">
+            <li>
+                <a href="https://www.instagram.com/uoftcssa/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-instagram"></i> Instagram</a>
+            </li>
+            <li>
+                <a href="https://discord.gg/fqS3N7JPqr" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-discord"></i>  Discord</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/company/uoftcssa/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-linkedin"></i>  LinkedIn</a>
+            </li>
+            <li>
+                <a href="mailto:info@cyber.skule.ca" target="_blank" rel="noreferrer noopener"><i class="fa-regular fa-envelope"></i> Email</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <script>
+        let topButton = document.getElementById("top-button");
+        window.onscroll = function() { scroll() };
+
+        function scroll() {
+            if (document.body.scrollTop > 10 ||document.documentElement.scrollTop > 20) {
+                topButton.className = 'show';
+                topButton.style.display = "block";
+            } else {
+                topButton.className = 'hide';
+                wait();
+                topButton.style.display = "none";
+            }
+        }
+
+        function scrollToTop() {
+            document.getElementById('top').scrollIntoView({behavior: 'smooth'});
+        }
+    </script>
+
+</body>
