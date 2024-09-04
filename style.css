@@ -11,6 +11,7 @@
     font-family: "Poppins", system-ui;
     margin: 0;
     text-decoration: none;
+    overflow-x: hidden;
 }
 
 a {
@@ -85,7 +86,7 @@ a {
     color: var(--background2);
 }
 
-#top i, {
+#top i {
     font-size: 3rem;
     translate: 0;
     transition: translate 0.5s ease-out;
@@ -357,5 +358,53 @@ a {
 
 
 @media (max-width: 1240px) {
+    #top-button p {
+        display: none;
+    }
+    #top-button i {
+        overflow: hidden;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .subpages {
+        gap: 3rem;
+        font-size: 2rem;
+    }
+    .navbar i {
+        display: none;
+    }
+    .logo-image img {
+        height: 45vh;
+        width: auto;
+    }
+    .event-title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .event {
+        text-align: center;
+    }
 
+    .section-par {
+        text-align: center;
+        padding: 1rem 0 4rem;
+    }
+    .body-section ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .body-section li {
+        height: 33vh;
+        overflow: hidden;
+    }
+    .initiative-title {
+        font-size: 3rem;
+    }
+    .initiative-title i {
+        overflow: hidden;
+    }
 }
