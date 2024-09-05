@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script
-    src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://kit.fontawesome.com/46500dfde8.js" crossorigin="anonymous"></script>
+    <script src="./splash-anim.js"></script>
+
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible"      content="ie=edge">
     <meta name="viewport"                   content="width=device-width, initial-scale=1.0">
@@ -17,7 +18,6 @@
     <meta property="og:image"               content="" />
     
     <link rel="stylesheet" href="style.css"></style>
-    <script src="https://kit.fontawesome.com/46500dfde8.js" crossorigin="anonymous"></script>
 
     <title>CSSA</title>
 </head>
@@ -39,10 +39,20 @@
         </div>
     </div>
 
-    <div class="splash-container">
-        <div class="logo-image"><img src="../assets/logo.png" /></div>
-        <div class="title">UOFT CSSA</div>
-        <div class="subtitle">The Cybersecurity Student Association</div>
+    <div class="body-section" style="position: absolute; height: 500px;">
+        <circlec>
+            <canvas></canvas>
+        </circlec>
+    </div>
+
+    <div class="splash">
+        <!-- TODO: Add background animation? -->
+
+        <div class="splash-container">
+            <div class="logo-image"><img src="../assets/logo.png" /></div>
+            <div class="title">UOFT CSSA</div>
+            <div class="subtitle">The Cybersecurity Student Association</div>
+        </div>
     </div>
 
     <div class="subdivider">
