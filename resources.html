@@ -28,7 +28,9 @@
     </button>
 
     <div class="navbar" id="top">
-        <a href="../index.html"><i class="fa-solid fa-fingerprint"></i></a>
+        <div class="left-nav">
+            <a href="../index.html"><i class="fa-solid fa-fingerprint" style="padding-right: 2rem;"></i>CSSA</a>
+        </div>
         <div class="subpages">
             <a class="link" href="../index.html">Home</a>
             <a class="link" href="../about.html">About</a>
@@ -46,31 +48,35 @@
     <div class="subdivider">
         <div class="event-title">Categories</div>
         <ul class="index-container">
-            <li onClick="scrollToSection('general')">General</li>
-            <li onClick="scrollToSection('pentest')">Penetration Testing</li>
-            <li onClick="scrollToSection('forensics')">OSINT/Forensics</li>
-            <li onClick="scrollToSection('careers')">Career Development</li>
+            <li class="link" onClick="scrollToSection('general')">General</li>
+            <li class="link" onClick="scrollToSection('pentest')">Penetration Testing</li>
+            <li class="link" onClick="scrollToSection('forensics')">OSINT/Forensics</li>
+            <li class="link" onClick="scrollToSection('careers')">Career Development</li>
         </ul>
     </div>
 
     <div class="body-section">
         <div class="section-title" id="general">General</div>
+
         <div class="section-par">
-            <a href="(https://github.com/Berkanktk/CyberSecurity">Introduction to Cybersecurity</a> -
+            <a class="link" href="https://github.com/Berkanktk/CyberSecurity">Introduction to Cybersecurity</a> -
             A detailed and comprehensive starting point for those wanting to learn more about the field.
         </div>
+
         <div class="section-par">
-            <a href="https://github.com/sbilly/awesome-security">Awesome Security</a> -
+            <a class="link" href="https://github.com/sbilly/awesome-security">Awesome Security</a> -
             A <emph>large</emph> collection of a variety of resources for different fields of cybersecurity.
             Includes information on networking, DevOps, exploitation, and more!
         </div>
+
         <div class="section-par">
-            <a href="https://www.cybrary.it">Cybrary</a> -
+            <a class="link" href="https://www.cybrary.it">Cybrary</a> -
             An online learning platform offering free and paid online courses for skills and career paths, 
             as well as certification preparations.
         </div>
+
         <div class="section-par">
-            <a href="https://tryhackme.com/">TryHackMe/HackTheBox</a> -
+            <a class="link" href="https://tryhackme.com/">TryHackMe/HackTheBox</a> -
             A browser-based cybersecurity training platform for all skill levels and fields. 
             HackTheBox additionally offers hands-on learning with their virtual labs.
         </div>
@@ -78,57 +84,64 @@
 
     <div class="body-section">
         <div class="section-title" id="pentest">Penetration Testing</div>
+
         <div class="section-par">
-            <a href="https://github.com/enaqx/awesome-pentest">Awesome Penetration Testing</a> -
+            <a class="link" href="https://github.com/enaqx/awesome-pentest">Awesome Penetration Testing</a> -
             A collection of resources for testing for vulnerabilities (simulating cyberattacks)
             on computer systems or applications. 
         </div>
+
         <div class="section-par">
-            <a href="https://ctflearn.com/">CTFLearn</a> -
-            A hacking/CTF learning resource and community, targeted at supporting beginners.
+            <a class="link" href="https://ctflearn.com/">CTFLearn</a> -
+            A hacking/CTF (capture-the-flag) learning resource and community, targeted at supporting beginners.
         </div>
+
         <div class="section-par">
-            <a href="https://picoctf.org/">PicoCTF</a> -
+            <a class="link" href="https://picoctf.org/">PicoCTF</a> -
             An educational program offering educational content and CTF puzzles for all skill levels.
+            It has a large archive of challenges, and has a yearly live competition.
         </div>
     </div>
 
-    <div class="body-section">
+    <div class="body-section" id="ref">
         <div class="section-title" id="forensics">OSINT/Forensics</div>
+
         <div class="section-par">
-            <a href="https://github.com/cugu/awesome-forensics">Awesome Forensics</a> -
-            A library of resources for forensic analysis/investigation tools.
+            <a class="link" href="https://github.com/cugu/awesome-forensics">Awesome Forensics</a> -
+            A library of resources for forensic analysis/investigation tools; i.e., being able to acquire and process
+            data in digital devices.
         </div>
+
         <div class="section-par">
-            <a href="https://github.com/jivoi/awesome-osint">Awesome OSINT</a> - 
-            A library of resources and tools pertaining Open-Source Intelligence.
+            <a class="link" href="https://github.com/jivoi/awesome-osint">Awesome OSINT</a> - 
+            A library of resources and tools pertaining Open-Source Intelligence (similar to forensics, but uses publicly available sources).
         </div>
+
         <div class="section-par">
-            <a href="https://inteltechniques.com/book1.html">OSINT Techniques: Resources for Uncovering Online Information</a> -
-            This book is considered the <emph>bible</emph> of OSINT; a very comprehensive guide of techniques
-            and resources for uncovering data online.
+            <a class="link" href="https://inteltechniques.com/book1.html">OSINT Techniques: Resources for Uncovering Online Information</a> -
+            The 'holy grail' of OSINT; a comprehensive guide of techniques and resources for uncovering data online.
         </div>
     </div>
 
-    <div class="body-section">
+    <div class="body-section" id="ref">
         <div class="section-title" id="careers">Career Development</div>
         <div class="section-par">
-            <a href="https://dev.to/jameesy/the-ultimate-guide-to-finding-a-job-in-tech-521l">Guide to Finding a Job in Tech</a> -
+            <a class="link" href="https://dev.to/jameesy/the-ultimate-guide-to-finding-a-job-in-tech-521l">Guide to Finding a Job in Tech</a> -
             An article that offers some good insight on applying to jobs, from resume and cover letter-building to the interview process.
             Applies to any role in technology.
         </div>
         <div class="section-par">
-            <a href="https://www.reddit.com/r/ITCareerQuestions/wiki/index/">r/ITCareerQuestions Wiki</a> -
+            <a class="link" href="https://www.reddit.com/r/ITCareerQuestions/wiki/index/">r/ITCareerQuestions Wiki</a> -
             A general guide to getting a job in Information Technologies. Reddit actually offers a lot of great resources and feedback,
             so I recommend taking a look and/or asking questions to members of the Subreddit.
         </div>
         <div class="section-par">
-            <a href="https://www.sans.org/cybersecurity-careers/20-coolest-cyber-security-careers/">SANS Overview of Cybersecurity Roles</a> -
+            <a class="link" href="https://www.sans.org/cybersecurity-careers/20-coolest-cyber-security-careers/">SANS Overview of Cybersecurity Roles</a> -
             A list of 20 roles you can have in the cybersecurity field, with a description of what the role looks like, 
             relevant courses/certifications you should take, and how the role is relevant in the real world.
         </div>
         <div class="section-par">
-            <a href="https://pauljerimy.com/security-certification-roadmap">Cybersecurity Certification Roadmap</a> -
+            <a class="link" href="https://pauljerimy.com/security-certification-roadmap">Cybersecurity Certification Roadmap</a> -
             Cybersecurity often require gaining certificates to further your career. This is a great visual guide to understand the types of
             certificates you should be aiming for depending on the role you are pursuing.
         </div>

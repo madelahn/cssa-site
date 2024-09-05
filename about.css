@@ -1,0 +1,57 @@
+#president {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 5rem;
+}
+
+#execs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+}
+
+#graphics {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+.member img { 
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 2px var(--accent2) solid;
+}
+
+.team-list {
+    padding-bottom: 3rem;
+}
+
+.member {
+    text-align: center;
+}
+
+.member-name {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.member-role {
+    font-weight: 400;
+    margin-top: -0.5rem;
+    font-size: 1.25rem;
+}
+
+.member-program {
+    padding-top: 0.1rem;
+    font-weight: 300;
+}
