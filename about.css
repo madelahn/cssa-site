@@ -33,10 +33,12 @@
 }
 
 .team-list {
+    display: grid;
     padding-bottom: 3rem;
 }
 
 .member {
+    max-width: 12rem;
     text-align: center;
 }
 
@@ -54,4 +56,40 @@
 .member-program {
     padding-top: 0.1rem;
     font-weight: 300;
+}
+
+@media (max-width: 1240px) {
+    #execs, #president, #graphics, #content {
+        gap: 1rem;
+    }
+
+    .member img {
+        width: 7.5rem;
+        height: 7.5rem;
+    }
+
+    .member-name {
+        font-size: 1.25rem;
+    }
+    .member-role {
+        font-size: 1rem;
+        margin-top: -0.25rem;
+    }
+    .member-program {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 800px) {
+    #all-members {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .team-list {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
 }

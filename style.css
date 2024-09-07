@@ -31,7 +31,6 @@ a {
     background: none; border: none;
     font-size: 3rem;
     font-weight: 900;
-    /* text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.75); */
 }
 
 #top-button i {
@@ -42,7 +41,6 @@ a {
     font-size: 1rem;
     padding: 0 1rem;
     text-transform: uppercase;
-    /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75); */
 }
 
 @-webkit-keyframes in {
@@ -405,7 +403,9 @@ a {
 
 .social-links a {
     color: var(--background2);
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .social-links li:hover {
@@ -413,7 +413,9 @@ a {
 }
 
 .social-links i {
-    padding: 0 0.25rem;
+    overflow: hidden;
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
 }
 
 .footnote {
