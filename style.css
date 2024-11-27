@@ -181,6 +181,7 @@ a {
 
 .subtitle {
     font-weight: 500;
+    text-align: center;
     font-size: 2.5rem;
     color: var(--accent);
 }
@@ -477,16 +478,20 @@ a {
     .body-section ul {
         display: flex;
         flex-direction: column;
+        height: auto;
     }
     .body-section li {
-        height: 33vh;
         overflow: hidden;
+        height: auto;
     }
     .initiative-title {
         font-size: 3rem;
     }
     .initiative-title i {
         overflow: hidden;
+    }
+    .initiative-description {
+        padding-bottom: 2rem;
     }
 
     .body-section {
