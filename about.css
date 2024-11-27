@@ -1,24 +1,20 @@
 #president {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
+    display: flex;
     gap: 5rem;
 }
 
 #execs {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     gap: 5rem;
 }
 
 #graphics {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     gap: 5rem;
 }
 
 #content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
     gap: 5rem;
 }
 

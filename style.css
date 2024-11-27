@@ -453,8 +453,8 @@ a {
         padding: 0;
     }
     .subpages {
+        font-size: 1.5rem;
         gap: 3rem;
-        font-size: 2rem;
     }
     .left-nav {
         display: none;
@@ -474,6 +474,10 @@ a {
     .section-par {
         text-align: center;
         padding: 1rem 0 4rem;
+    }
+
+    .body-section {
+        padding: 4rem 3rem;
     }
     .body-section ul {
         display: flex;
@@ -520,4 +524,10 @@ a {
         height: 8vh;
     }
 
+    .footer {
+        padding: 1rem;
+    }
+    .social-links {
+        gap: 1rem;
+    }
 }
